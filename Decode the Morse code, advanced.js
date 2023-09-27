@@ -14,8 +14,6 @@ var decodeBits = function(bits){
   }
   bits = arr;
 
-  // w przypadku gdy najmniejszym unitem sa same 0 to wez kolejny najmniejszy unit
-
   let unit = Math.min(...bits.map(item => item.length));
 
   for (let i of bits) {
